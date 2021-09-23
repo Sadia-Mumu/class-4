@@ -1,0 +1,310 @@
+/*0C66FF  0F2656*/
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+
+*{
+	margin: 0;
+	padding: 0;
+    box-sizing: border-box;
+    -webkit-box-sizing:border-box;
+    -moz-box-sizing:border-box;
+}
+
+body{
+	color: #0F2656;
+	font-family: 'Roboto', sans-serif;
+}
+img{
+	max-width: 100%;
+	display: block;
+}
+ul{
+	list-style: none;
+}
+a, a:hover{
+	text-decoration: none;
+}
+h1, {
+	color: #14326f;
+	margin: 10px;
+}
+
+.container{
+    width: 1200px;
+    margin: auto;
+}
+.flex{
+    display: flex;
+    flex-wrap: wrap;
+}
+.align-center{
+	align-items: center;
+}
+
+h1{
+    font-size: 50px;
+    text-align: right;
+}
+h1 span{
+    color: #008aff;
+    display: block;
+}
+p{
+    font-size: 13px;
+    line-height: 1.6;
+    opacity: 0.8;
+    padding-top: 15px;
+}
+h1 strong{
+    color: #f55e7c;
+}
+h2{
+    font-size: 49px;
+}
+/* 
+++++++++++++++++++++++++++
+header section start css
+++++++++++++++++++++++++++
+ */
+
+header{
+    padding: 10px 0;
+    border-bottom: 2px solid #3b506c12;
+}
+.logo{
+    flex: 1 0 20%;
+    max-width: 20%;
+}
+.logo a{}
+.logo img{
+    /* width: 150px; */
+}
+nav{
+    flex: 1 0 80%;
+    max-width: 80%;
+}
+nav ul{
+    justify-content: flex-end;
+}
+nav ul li{}
+nav ul li a{
+    color: #3b506c;
+    font-size: 17px;
+    padding: 10px 20px;
+    display: block;
+    letter-spacing: 1px;
+    font-weight: 400;
+}
+
+
+/*
++++++++++++++++++++++
+Banner Section
++++++++++++++++++++++
+*/
+.banner-section{
+    padding: 50px 0;
+}
+.banner{
+    max-width: 900px;
+    margin: auto;
+    text-align: center;
+}
+.banner img{
+    max-width: 600px;
+    margin: auto;
+    margin-top: 30px;
+}
+
+ /*
++++++++++++++++++++++
+Feature Section Start
++++++++++++++++++++++
+*/
+.feature-section{}
+.feature{
+    max-width: 900px;
+    margin: auto;
+}
+.col-1-2{
+    flex: 1 0 50%;
+    padding: 15px;
+    max-width: 50%;
+}
+text-right{
+	text-align: right;
+}
+
+ /*
++++++++++++++++++++++
+Service Section
++++++++++++++++++++++
+*/
+.service-section{
+	padding: 50px 0;
+}
+.col-1-3{
+    flex: 1 0 33.33%;
+    padding: 15px;
+    max-width: 33.33%;
+}
+.service{
+    padding: 50px 30px;
+    border-radius: 8px;
+    box-shadow: 0 0 20px #33333312;
+}
+.service img{
+    height: 180px;
+    margin: auto;
+    margin-bottom: 20px;
+}
+.service h2{
+    font-size: 20px;
+}
+.color3{
+    background-color: #f1f1b570;
+}
+.color2{
+    background-color: #c9f1c97a;
+}
+.color1{
+    background-color: #d267a424;
+}
+
+ /*
++++++++++++++++++++++
+Footer section
++++++++++++++++++++++
+*/
+footer{
+	background: #008aff;
+	padding: 30px 0;
+	text-align: center;
+}
+footer p{
+	color: #ffffffb8;
+}
+
+ footer a{
+    color: white;
+}
+
+
+@media(max-width: 1399px){
+	.container{
+         width: 1000px;
+	}
+}
+@media(max-width: 1199px){
+	.container{
+         width: 900px;
+	}
+	.banner{
+		max-width: 470px;
+	}
+}
+@media(max-width: 991px){
+	.container{
+         width: 700px;
+	}
+	nav ul li a{
+  	font-size: 18px;
+  	padding: 10px 12px;
+  	font-weight: 500;
+   }
+   .banner{
+  	padding: 0 25px;
+  }
+  .feature{
+  	max-width: 600px;
+  }
+  .feature h1{
+  	font-size: 35px;
+  }
+  .service{
+  	padding: 50px 20px;
+  }
+  .service p{
+  	font-size: 16px;
+  }
+}
+
+@media(max-width: 767px){
+	.container{
+         width: 600px;
+	}
+	.logo, nav {
+  	  flex: 1 0 100%;
+  	  max-width: 100%;
+   }
+   .logo img{
+      margin: auto;
+   }
+  nav ul{
+  	justify-content: center;
+  }
+  nav ul li a{
+  	font-size: 17px;
+  	padding: 10px 12px;
+  	letter-spacing: 0;
+  	font-weight: 500;
+  }
+   .banner{
+  	padding: 0 25px;
+  }
+  h1{
+  	font-size: 40px;
+  }
+   .banner img{
+  	max-width: 450px;
+  }
+   .col-1-3{
+  	flex: 1 0 50%;
+  	max-width: 50%;
+  }
+  .service-section .flex{
+  	justify-content: center;
+  }
+}
+
+
+@media(max-width: 575px){
+	.container{
+         width: 100%;
+         padding: 0 30px;
+	}
+	.logo, nav {
+  	  flex: 1 0 100%;
+  	  max-width: 100%;
+   }
+   .logo img{
+      margin: auto;
+   }
+  nav ul{
+  	justify-content: center;
+  }
+  nav ul li a{
+  	font-size: 17px;
+  	padding: 10px 12px;
+  	letter-spacing: 0;
+  	font-weight: 500;
+  }
+  h1{
+  	font-size: 30px;
+  }
+  p{
+  	font-size: 14px;
+  }
+  .banner img{
+  	max-width: 300px;
+  }
+  .col-1-3{
+  	flex: 1 0 100%;
+  	max-width: 100%;
+  }
+  footer{
+  	padding: 20px 15px;
+  	text-align: center;
+  }
+}
